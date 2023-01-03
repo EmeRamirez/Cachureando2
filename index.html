@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachureros Store</title>
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="styles/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,1000&family=Satisfy&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/img/cachurea-banner-logo.png" alt="" class="banner-logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contacto</a>
+          </li>
+        </ul>
+
+        <!--Dropdown de Búsqueda-->
+        <div class="btn-group" id="boton-busqueda">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-busqueda">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </ul>
+        </div>
+        <!--Dropdown de Búsqueda-->
+
+        <!--Dropdown de Perfil-->
+        <div class="btn-group" id="boton-perfil">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Nuevo Usuario</a>
+            </li>
+          </ul>
+        </div>
+        <!--Dropdown de Perfil-->
+
+        <!--Dropdown de Carrito-->
+        <div class="btn-group" id="boton-perfil">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Aquí va un resumen del carrito</a>
+            </li>
+          </ul>
+        </div>
+        <!--Dropdown de Carrito-->
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+   
+        <!-- AQUI VA UN SLIDER CAROUSEL -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="50000">
+              <img src="assets/img/foto1-adap.png" class="d-block w-100" alt="..." id="foto-1">
+              <div class="carousel-caption d-md-block" id="cont-foto1">
+                <h5 id="texto-titulos1">¡Cachurea con Nosotros!</h5>
+                <p id="texto-p1">Le damos una nueva vida a tus artículos perdidos</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="50000">
+              <img src="assets/img/foto2-adap.png" class="d-block w-100" alt="..." id="foto-2">
+              <div class="carousel-caption d-md-block" id="cont-foto2">
+                <p id="texto-p2">Sorpréndete con nuestras increibles</p>
+                <h5 id="texto-titulos2"><a href="#">OFERTAS</a></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="assets/img/foto3-adap.png" class="d-block w-100" alt="..." id="foto-3">
+              <div class="carousel-caption d-md-block" id="cont-foto3">
+                <h5 id="texto-titulos3">Third slide label</h5>
+                <p id="texto-p3">Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="assets/img/foto4-adap.png" class="d-block w-100" alt="..." id="foto-4">
+              <div class="carousel-caption d-md-block" id="cont-foto4">
+                <h5 id="texto-titulos4">Third slide label</h5>
+                <p id="texto-p4">Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      <!-- Slider Carousel-->
+    
+
+    <!-- Contenedor de cartas -->
+    <div id="contenedor-cartas">
+      <div class="card" style="width: 18rem;" class="card">
+        <img src="assets/img/tracking-white.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Compromiso de entrega rápida a todo el país. Recibe en menos de 24 horas en la region de
+            Valparaiso.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" class="card">
+        <img src="assets/img/insignia-white.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Experiencia y calidad de servicio garantizada. Contamos con cientos de ventas concretadas
+            y feedback positivo de clientes.</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;" class="card">
+        <img src="assets/img/exchange-white.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Desenpolva tus artículos con nosotros, generemos economía circular. Compramos tus
+            artículos con transparencia y a precios justos.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contenedor de cartas -->
+
+  </main>
+
+  <!--Footer-->
+  <footer>
+    <div id="cont-ft-1">
+      <img id="logo2" src="assets/img/logo1.png" alt="">
+    </div>
+
+    <div id="cont-sitio">
+      <div class="container text-center">
+        <div class="row row-cols-4">
+          <div class="col-2">
+            <ul>
+              <li><a href="#">Quiénes somos</a></li>
+              <li><a href="#">Tienda</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul>
+              <li><a href="#">Mapa del sitio</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Vende con nosotros</a></li>
+            </ul>
+          </div>
+          <div class="col-8"></div>
+          <div class="col-12">
+            <p>&copy;2022 Cachureando - Derechos reservados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contactoft">
+      <div>
+        <p>O'Higgins 1818 - Valparaíso</p>
+        <p>Teléfono: 235 35 35</p>
+        <p>cachureando@gmail.com</p>
+      </div>
+      <div id="cont-rrss">
+        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"
+            style="font-size: 45px;color: white"></i></a>
+        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"
+            style="font-size: 45px;color: white"></i></a>
+        <a href="#"><i class="fa-brands fa-square-whatsapp" style="font-size: 45px;color: white"></i></a>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Footer-->
+
+  <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>"
+</body>
+
+</html>
