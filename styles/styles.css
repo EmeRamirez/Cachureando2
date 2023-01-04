@@ -275,11 +275,67 @@ footer, footer a {
     padding: 3% 15%;
 }
 
-/* #foto1, #foto2, #foto3, #foto4 {
-    height: 40px;
-    width: 250px;
-    background-size: cover;
-} */
+
+#contenedor-formulario {
+    margin: 5vh 15vw; 
+    padding: 2vh;
+    background-color: #0000007e;
+    /* border-radius: 15px; */
+}
+
+#subcont-form {
+    padding: 2vw 5vw;
+}
+
+.input-formulario {
+    padding: 1vw;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.titulo-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 226, 186);
+    margin: 5vw 0;
+}
+
+.titulo-contacto h1 {
+    transform: scale(.9, 1);
+    font-size: 9vw;
+    margin: 0;
+    font-weight: 0;
+    font-family: 'Six Caps', sans-serif;
+    letter-spacing: .1vw;
+
+}
+
+.titulo-contacto p {
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2vw;
+    transform: scale(1, 1);
+    letter-spacing: .1vw;
+}
+
+#boton-formulario {
+    background-color: rgb(32, 30, 30); 
+    border: 0ch;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    letter-spacing: .4vw;
+    font-size: 1.1vw;
+    padding: 1.5vw 1vw;
+}
+
+#cont-btn-form {
+    margin-bottom: 10vw;
+    margin-top: 1vw;
+}
 
 
 @media only screen and (max-width:767px) {
