@@ -1,22 +1,66 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-}
+} */
 
 a {
+    color: antiquewhite !important;
     text-decoration: none;
 }
 
+li a:hover {
+    transform: translateY(-3%);
+    color: #3b57c6 !important;
+    font-size: large !important;
+}
+
 .navbar {
-    box-shadow: 1px 1px 15px 7px #000000;
+    background-color: #060701 !important;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
     font-family: 'Nunito', sans-serif;
+}
+
+#navbarSupportedContent ul {
+    color: antiquewhite !important;
+    padding-left: 3%;
+}
+
+.nav-item {
+    padding-inline: 20px;
+}
+
+.btn-outline-success {
+    --bs-btn-color: antiquewhite;
+    --bs-btn-border-color: #191b87;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #191b87;
+    --bs-btn-hover-border-color: #191b87;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #191b87;
+    --bs-btn-active-border-color: #191b87;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #191b87;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+
+/* VER CÓMO CAMBIAR COLOR A FORMA */
+/* .navbar-toogler {
+    
+} */
+/* REVISAR PERTINENCIA */
+/* #nav-item li {
+    justify-content: center;
 }
 
 .container-fluid {
     color:white;
-}
+} */
 
 
 main {
@@ -24,18 +68,11 @@ main {
     padding-bottom: 120px;
 }
 
-li a:hover {
-    transform: translateY(-3%);
-    color: #e0e256 !important;
-}
+
 
 .banner-logo {
     height: 60px;
     padding-left: 10%;
-}
-
-#navbarSupportedContent ul {
-    padding-left: 3%;
 }
 
 #contenedor-busqueda {
@@ -43,7 +80,8 @@ li a:hover {
     padding: 5% 5%;
 }
 
-#boton-perfil {
+/* VERSIÓN EMERSON ELIMINADA */
+/* #boton-perfil {
     padding-right: 0.8%;
 }
 
@@ -54,7 +92,7 @@ li a:hover {
 #contenedor-perfil li {
     padding-left: 6%;
     color: antiquewhite
-}
+} */
 
 
 body {
@@ -197,11 +235,6 @@ body {
     min-height: 100%;
 }
 
-/* !important: Da prioridad de estilo */
-.navbar {
-    background-color: #060701 !important;
-}
-
 /*Footer*/
 
 footer, footer a {
@@ -332,7 +365,6 @@ footer, footer a {
     main {
         padding-bottom: 0px;
     }
-}
 
 @media only screen and (max-width:480px) {
     #carouselExampleInterval{
@@ -451,5 +483,3 @@ footer, footer a {
         padding-right: 10px;
         padding-top: 25px;
     }
-    
-}

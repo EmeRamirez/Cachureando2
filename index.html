@@ -17,85 +17,43 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+  <script src=""></script>
 
+  <script src="https://kit.fontawesome.com/9bf55c7eb1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/img/cachurea-banner-logo.png" alt="" class="banner-logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
-        <span><i class="fa-sharp fa-solid fa-bars"></i></span>
+      <a class="navbar-brand" href="#"><img src="assets/img/Isotipo.png" alt="" width="150 rem" height="60 rem"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Tienda</a>
+            <a class="nav-link" href="#">Tienda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Nosotros</a>
+            <a class="nav-link" href="#">Quiénes somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Contacto</a>
+            <a class="nav-link" href="#">Contacto</a>
           </li>
         </ul>
-
-        <!--Dropdown de Búsqueda-->
-        <div class="btn-group" id="boton-busqueda">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-busqueda">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><i
-                  class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-          </ul>
-        </div>
-        <!--Dropdown de Búsqueda-->
-
-        <!--Dropdown de Perfil-->
-        <div class="btn-group" id="boton-perfil">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Ingresar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Nuevo Usuario</a>
-            </li>
-          </ul>
-        </div>
-        <!--Dropdown de Perfil-->
-
-        <!--Dropdown de Carrito-->
-        <div class="btn-group" id="boton-perfil">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Aquí va un resumen del carrito</a>
-            </li>
-          </ul>
-        </div>
-        <!--Dropdown de Carrito-->
-
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Ingresa búsqueda" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+      <div>
+        <a href="#"><i class="fa-regular fa-cart-shopping fa-2x"></i></a>
       </div>
     </div>
   </nav>
-
   <main>
    
         <!-- AQUI VA UN SLIDER CAROUSEL -->
@@ -233,8 +191,8 @@
   </footer>
   <!-- Footer-->
 
-  <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>"
+  
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
