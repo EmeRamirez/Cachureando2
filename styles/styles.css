@@ -8,12 +8,13 @@
 a {
     color: antiquewhite !important;
     text-decoration: none;
+    font-size: larger !important;
 }
 
 li a:hover {
     transform: translateY(-3%);
     color: #3b57c6 !important;
-    font-size: large !important;
+    font-size: x-large !important;
 }
 
 .navbar {
@@ -48,6 +49,10 @@ li a:hover {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #198754;
     --bs-gradient: none;
+
+
+
+    
 
 /* VER CÓMO CAMBIAR COLOR A FORMA */
 /* .navbar-toogler {
