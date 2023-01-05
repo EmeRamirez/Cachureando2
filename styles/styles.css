@@ -49,10 +49,7 @@ li a:hover {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #198754;
     --bs-gradient: none;
-
-
-
-    
+}
 
 /* VER CÓMO CAMBIAR COLOR A FORMA */
 /* .navbar-toogler {
@@ -72,8 +69,6 @@ main {
     padding-top: 80px;
     padding-bottom: 120px;
 }
-
-
 
 .banner-logo {
     height: 60px;
@@ -98,7 +93,6 @@ main {
     padding-left: 6%;
     color: antiquewhite
 } */
-
 
 body {
     background: #808364;
@@ -331,6 +325,7 @@ footer, footer a {
         margin-top: 5%;
         margin-left: 5.5%
     }
+}
 
     #contenedor-cartas {
         margin-top: 60px;
@@ -372,10 +367,11 @@ footer, footer a {
     }
 
 @media only screen and (max-width:480px) {
-    #carouselExampleInterval{
+    #carouselExampleInterval {
         padding: 5% 5%;
         margin-right: 5%;
     }
+}
 
     #contenedor-cartas {
         margin-top: 20px;
@@ -439,15 +435,39 @@ footer, footer a {
 
     #texto-titulos1{
         font-size: 7vw;
-        padding-top: 0;
+
     }
 
-    footer{
-        padding-top: 0;
-    }
+.container {
+    margin: 0;
+    margin-right: 0%;
+    padding: 0;
+    width: 100%;
+}
+footer {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
 }
 
-@media only screen and (max-width:400px) {
+.column1 {
+    width: 100%;
+}
+#sitioft a {
+color: antiquewhite !important;
+}
+
+#sitioft a:hover {
+    color: #3b57c6 !important;
+    }
+
+
+/* ESTILOS DE FOOTER EMERSON */
+    /* footer{
+        padding-top: 0;
+    }
+
+@media only screen and (max-width:400px) {}
     #logo2 {
         height: 28%;
         padding-left: 25px;
@@ -487,4 +507,4 @@ footer, footer a {
     #contactoft {
         padding-right: 10px;
         padding-top: 25px;
-    }
+    } */

@@ -20,6 +20,61 @@
   <script src=""></script>
 
   <script src="https://kit.fontawesome.com/9bf55c7eb1.js" crossorigin="anonymous"></script>
+
+  <!-- ESTILOS DEL EJEMPLO BOOTSTRAP -->
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -45,16 +100,16 @@
           </li>
         </ul>
   
-        <form class="d-flex" role="search">
+        <form class="d-flex" role="search" class="form">
           <input class="form-control me-2" type="search" placeholder="Ingresa búsqueda" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
+      <div >
       <div class="iconoshd">
-      <div>
         <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
       </div>
-      <div>
+      <div class="iconoshd">
         <a href="#"><i class="fa-regular fa-user fa-2x"></i></a>
       </div>
     </div>
@@ -149,9 +204,56 @@
   </main>
 
   <!--Footer-->
-  <footer>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top width-100%">
+      <div class="col mb-3">
+      <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem">
+      </div>
+  
+      <div class="col mb-3" class="column1">
+        <h5>Sitio</h5>
+        <ul class="nav flex-column" id="sitioft">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tienda</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quiénes Somos</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vende con nosotros</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Contacto</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">O´Higgins 1818 - Valparaíso</li>
+          <li class="nav-item mb-2">32 235 35 35</li>
+          <li class="nav-item mb-2">cachureando@gmail.com</li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Síguenos en RRSS</h5>
+        <ul id="rrss">
+        <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        <h5>Equipo</h5>
+        <h6> Camilo Adones - Andrea Jiménez - Emerson Ramírez</h6>
+      </div>
+      
+    <div>
+      <h5>&copy; 2022 Cachureando - Derechos reservados</h5>
+    </div>
+      
+    </div>
+    </footer>
+  </div>
+  <!-- <footer>
     <div id="cont-ft-1">
-      <img id="logo2" src="assets/img/logo1.png" alt="">
+      <img src="assets/img/logo1.png" alt="" width="120 rem" height="100 rem">
     </div>
 
     <div id="cont-sitio">
@@ -194,7 +296,7 @@
       </div>
     </div>
 
-  </footer>
+  </footer> -->
   <!-- Footer-->
 
   
