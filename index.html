@@ -78,15 +78,24 @@
 </head>
 
 <body>
+
+  <!-- AQUÍ VA EL HEADER -->
+<header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/img/Isotipo.png" alt="" width="150 rem" height="60 rem"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <div class="isotipo">
+      <a class="navbar-brand" href="#" ><img src="assets/img/Isotipo.png" alt="" width="150 rem" height="60 rem" id="imgnav"></a>
+    </div>
+
+    <div class="container-fluid bg-black">
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
@@ -99,67 +108,67 @@
             <a class="nav-link" href="#">Contacto</a>
           </li>
         </ul>
-  
-        <form class="d-flex" role="search" class="form">
+      </div>
+
+      <div class="formsearch">
+        <form class="d-flex" role="search" >
           <input class="form-control me-2" type="search" placeholder="Ingresa búsqueda" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form>
       </div>
-      <div >
+
       <div class="iconoshd">
         <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
-      </div>
-      <div class="iconoshd">
         <a href="#"><i class="fa-regular fa-user fa-2x"></i></a>
-      </div>
-    </div>
+        </div>
     </div>
   </nav>
+</header>
   <main>
-   
-        <!-- AQUI VA UN SLIDER CAROUSEL -->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
+
+    <!-- AQUI VA UN SLIDER CAROUSEL -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="50000">
+          <img src="assets/img/foto1-adap.png" class="d-block w-100" alt="..." id="foto-1">
+          <div class="carousel-caption d-md-block" id="cont-foto1">
+            <h5 id="texto-titulos1">¡Cachurea con Nosotros!</h5>
+            <p id="texto-p1">Le damos una nueva vida a tus artículos perdidos</p>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="50000">
-              <img src="assets/img/foto1-adap.png" class="d-block w-100" alt="..." id="foto-1">
-              <div class="carousel-caption d-md-block" id="cont-foto1">
-                <h5 id="texto-titulos1">¡Cachurea con Nosotros!</h5>
-                <p id="texto-p1">Le damos una nueva vida a tus artículos perdidos</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="50000">
-              <img src="assets/img/foto2-adap.png" class="d-block w-100" alt="..." id="foto-2">
-              <div class="carousel-caption d-md-block" id="cont-foto2">
-                <p id="texto-p2">Sorpréndete con nuestras increibles</p>
-                <h5 id="texto-titulos2"><a href="#">OFERTAS</a></h5>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assets/img/foto3-adap.png" class="d-block w-100" alt="..." id="foto-3">
-              <div class="carousel-caption d-md-block" id="cont-foto3">
-                <h5 id="texto-titulos3">Third slide label</h5>
-                <p id="texto-p3">Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assets/img/foto4-adap.png" class="d-block w-100" alt="..." id="foto-4">
-              <div class="carousel-caption d-md-block" id="cont-foto4">
-                <h5 id="texto-titulos4">Third slide label</h5>
-                <p id="texto-p4">Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="50000">
+          <img src="assets/img/foto2-adap.png" class="d-block w-100" alt="..." id="foto-2">
+          <div class="carousel-caption d-md-block" id="cont-foto2">
+            <p id="texto-p2">Sorpréndete con nuestras increibles</p>
+            <h5 id="texto-titulos2"><a href="#">OFERTAS</a></h5>
           </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="assets/img/foto3-adap.png" class="d-block w-100" alt="..." id="foto-3">
+          <div class="carousel-caption d-md-block" id="cont-foto3">
+            <h5 id="texto-titulos3">Third slide label</h5>
+            <p id="texto-p3">Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="assets/img/foto4-adap.png" class="d-block w-100" alt="..." id="foto-4">
+          <div class="carousel-caption d-md-block" id="cont-foto4">
+            <h5 id="texto-titulos4">Third slide label</h5>
+            <p id="texto-p4">Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -169,9 +178,9 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button> -->
-        </div>
-      <!-- Slider Carousel-->
-    
+    </div>
+    <!-- Slider Carousel-->
+
 
     <!-- Contenedor de cartas -->
     <div id="contenedor-cartas">
@@ -204,14 +213,14 @@
   </main>
 
   <!--Footer-->
+  <footer>
+
   <div class="container">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top width-100%">
-      <div class="col mb-3">
-      <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem">
+      <div class="col mb-3" id="logoft">
+        <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem" >
       </div>
-  
-      <div class="col mb-3" class="column1">
-        <h5>Sitio</h5>
+
+      <div class="col mb-3" id="column1">
         <ul class="nav flex-column" id="sitioft">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tienda</a></li>
@@ -220,9 +229,8 @@
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vende con nosotros</a></li>
         </ul>
       </div>
-  
-      <div class="col mb-3">
-        <h5>Contacto</h5>
+
+      <div class="col mb-3" id="contacto">
         <ul class="nav flex-column">
           <li class="nav-item mb-2">O´Higgins 1818 - Valparaíso</li>
           <li class="nav-item mb-2">32 235 35 35</li>
@@ -230,76 +238,36 @@
         </ul>
       </div>
 
-      <div>
+      <div class="col mb-3" id="rrss">
         <h5>Síguenos en RRSS</h5>
         <ul id="rrss">
-        <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
         </ul>
       </div>
-  
-      <div class="col mb-3">
+    </div>
+
+      <div class="finalft">
+      <div>
         <h5>Equipo</h5>
         <h6> Camilo Adones - Andrea Jiménez - Emerson Ramírez</h6>
       </div>
       
-    <div>
-      <h5>&copy; 2022 Cachureando - Derechos reservados</h5>
-    </div>
-      
-    </div>
-    </footer>
-  </div>
-  <!-- <footer>
-    <div id="cont-ft-1">
-      <img src="assets/img/logo1.png" alt="" width="120 rem" height="100 rem">
-    </div>
-
-    <div id="cont-sitio">
-      <div class="container text-center">
-        <div class="row row-cols-4">
-          <div class="col-2">
-            <ul>
-              <li><a href="#">Quiénes somos</a></li>
-              <li><a href="#">Tienda</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li><a href="#">Mapa del sitio</a></li>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Vende con nosotros</a></li>
-            </ul>
-          </div>
-          <div class="col-8"></div>
-          <div class="col-12">
-            <p>&copy;2022 Cachureando - Derechos reservados</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="contactoft">
       <div>
-        <p>O'Higgins 1818 - Valparaíso</p>
-        <p>Teléfono: 235 35 35</p>
-        <p>cachureando@gmail.com</p>
+        <h7 id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
       </div>
-      <div id="cont-rrss">
-        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"
-            style="font-size: 45px;color: white"></i></a>
-        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"
-            style="font-size: 45px;color: white"></i></a>
-        <a href="#"><i class="fa-brands fa-square-whatsapp" style="font-size: 45px;color: white"></i></a>
+      <div>
+        <h5 id="fecha">Aquí va la fecha</h5>
       </div>
     </div>
 
-  </footer> -->
-  <!-- Footer-->
+    </footer>
+  
 
   
+  <!-- Footer-->
+
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
