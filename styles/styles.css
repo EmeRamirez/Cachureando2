@@ -1,3 +1,4 @@
+/* HEADER */
 .navbar {
     background-color: #060701 !important;
     z-index: 100;
@@ -16,7 +17,6 @@ a {
 li a:hover {
     transform: translateY(-3%);
     color: #3b57c6 !important;
-    font-size: x-large !important;
 }
 
 #navbarSupportedContent ul {
@@ -45,19 +45,30 @@ li a:hover {
     --bs-gradient: none;
 }
 
-@media only screen and (max-width:1023px) {
+
+.iconoshd a:hover {
+    transform: translateY(-3%);
+    color: #3b57c6 !important;
+}
+
+.iconoshd {
+    display: flex;
+
+}
+
+@media screen and (max-width:1366px) {
     .formsearch { 
         display: none;
     }
 }
 
-@media only screen and (max-width:1023px) {
+@media only screen and (max-width:1366px) {
     .iconoshd { 
         display: none;
     }
 }
 
-@media only screen and (max-width:1023px) {
+@media screen and (max-width:1366px) {
     .navbar { 
         justify-content: center;
     }
@@ -71,6 +82,8 @@ li a:hover {
     .navbar-toggler {
         align-items: flex-start;
     }
+
+    /* FIN HEADER */
 
 /* VER CÓMO CAMBIAR COLOR A FORMA */
 /* .navbar-toogler {
@@ -86,10 +99,6 @@ li a:hover {
 } */
 
 
-main {
-    padding-top: 80px;
-    padding-bottom: 120px;
-}
 
 .banner-logo {
     height: 60px;
@@ -101,19 +110,6 @@ main {
     padding: 5% 5%;
 }
 
-/* VERSIÓN EMERSON ELIMINADA */
-/* #boton-perfil {
-    padding-right: 0.8%;
-}
-
-#boton-busqueda {
-    padding-right: 0.8%;
-}
-
-#contenedor-perfil li {
-    padding-left: 6%;
-    color: antiquewhite
-} */
 
 body {
     background: #808364;
@@ -252,70 +248,7 @@ body {
     text-align: center;
     font-size: large;
     color: antiquewhite;
-    min-height: 100%;
-}
-
-/*Footer*/
-
-/* footer {
-    display: grid !important;
-    grid-template-columns: 2fr 4fr 2fr 2fr;
-    margin: 0%;
-    padding: 0%;
-    width: 100% !important;
-} */
-
-footer, footer a {
-    background-color: #000000;
-    color: antiquewhite;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    padding-top: 25px;
-    max-height: 400px;
-}
-
-
-/* #contactoft {
-    display: grid;
-    grid-template-rows: 120px 100px 0px;
-    text-align: center;
-    height: 260px;
-    padding-top: 6%;
-} */
-
-/* #logo2 {
-    height: 70%;
-    align-items: center;
-    justify-content: center;
-    padding-left: 14%;
-    padding-top: 15%;
-}
-
-#cont-ft-1 {
-    height: 260px;
-}
-
-#cont-sitio {
-    height: 260px;
-    text-align: flex start;
-    padding-left: 0px;
-}
-
-#cont-sitio a {
-    text-align: left;
-    width: 100%;
-    color: white;
-}
-
-#cont-rrss {
-    display: flex;
-    padding-left: 80px;
-    text-align: center;
-}
-
-.row-row-cols-3, .col-2 ul, .col-3 ul, .col-10, .col-10 ul {
-    padding: 0px;
+    min-height: 80%;
 }
 
 .col-2 ul li a{
@@ -326,9 +259,7 @@ footer, footer a {
     padding-top: 30px;
     padding-left: 25%;
     font-size: 12px;
-} */
-/*Footer*
-
+}
 
 #carouselExampleInterval {
     padding: 3% 15%;
@@ -341,13 +272,13 @@ footer, footer a {
 } */
 
 
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     #contenedor-busqueda, #contenedor-perfil {
         left: 0%;
     }
 }
 
-@media only screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     #carouselExampleInterval {
         margin-top: 5%;
         margin-left: 5.5%
@@ -367,6 +298,18 @@ footer, footer a {
         
     }
 
+/*FOOTER*/
+
+    footer, footer a {
+        background-color: #000000;
+        color: antiquewhite;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        padding-top: 25px;
+        max-height: 400px;
+        width: 100%;
+    }
     footer a, footer p {
         font-size: 1.8vw;
     }
@@ -389,11 +332,7 @@ footer, footer a {
         margin-top: 1vw;
     }
 
-    main {
-        padding-bottom: 0px;
-    }
-
-@media only screen and (max-width:480px) {
+    @media screen and (max-width:420px) {
     #carouselExampleInterval {
         padding: 5% 5%;
         margin-right: 5%;
@@ -461,10 +400,12 @@ footer, footer a {
 
     }
 
+
+    /* FOOTER */
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    margin-left: 0%;
     margin-right: 0%;
     padding: 0;
     width: 100%;
@@ -472,7 +413,9 @@ footer, footer a {
  
 .column1 {
     width: 100%;
+    list-style-type: none;
 }
+
 #sitioft a {
 color: antiquewhite !important;
 }
@@ -489,11 +432,39 @@ color: antiquewhite !important;
         padding-right: 20px;
     }
 
+    #finalftshop {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .col {
         display: flex;
         justify-content: space-evenly;
         padding-left: 10px
     }
+
+    #rrss {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style-type: none;
+        width: 100%;
+    }
+
+ul #rrss {
+    display: flex;
+    justify-content: space-evenly; 
+    width: 100%;
+    padding: 0px;
+
+}
+
+#rrss li {
+    justify-self:center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
     #fecha {
         display: flex;
@@ -506,13 +477,13 @@ color: antiquewhite !important;
         justify-self: center;
     }
 
-    @media only screen and (max-width:768px) {
+    @media screen and (max-width:768px) {
         #logoft { 
             display: none;
         }
     }
 
-    @media screen and (min-width:1068px ) {
+    @media screen and (max-width:1366px ) {
         .container {
             display: grid;
           grid-template-columns: 1 fr 1fr 1fr 1fr !important;
@@ -520,13 +491,7 @@ color: antiquewhite !important;
         }
       }
 
-       @media screen and (max-width:400px ) {
-        #rrss {
-          display: flex;
-          justify-content: space-between;
-        }
-    }
-       @media screen and (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         .container {
           grid-template-columns: repeat(3, 1fr);
           grid-gap: 2px;
@@ -534,9 +499,198 @@ color: antiquewhite !important;
         }
       }
 
-      @media screen and (min-width: 770px) {
-        .container {
-          grid-template-columns: repeat(4, 1fr);
-          grid-gap: 2px;
+     { @media screen and (max-width: 420px) {
+        /* .navbar {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            padding: 2px
+        } */}
+        .navbarcollapse {
+        display: grid;
         }
-      }
+        body {
+            width: 100%;
+        }
+        footer {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 2px;
+        margin: 3rem;
+        width: 400px;
+        }
+        .container {
+          /* grid-template-columns: 1fr 1fr;
+          grid-gap: 4px;
+          width: 420px; */
+          font-size: 12px;
+        }
+              #rrss {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;s
+        }
+
+        .finalft {
+            display: none;
+        }
+
+        #titulorrss {
+            font-size: 12px;
+        }
+    }
+       
+#contenedorbg {
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+#carro {
+    background-color: rgb(34, 33, 33);
+    padding: 2vw;
+    color: antiquewhite;
+}
+
+.bg-primary {
+    background-color: rgb(92, 92, 40) !important;
+}
+
+.text-primary {
+    color: antiquewhite  !important;
+}
+
+/* FIN FOOTER */
+
+/* SHOPPING */
+
+.w-100 {
+    width: 50% !important;
+}
+
+.lead {
+    color: antiquewhite;
+}
+
+#titulocarro {
+    color: antiquewhite;
+}
+
+.copy {
+   padding-left: 20rem;
+}
+
+/* FIN SHOPPING */
+
+
+/* LOGIN */
+
+#formlogin {
+    width: max-content;
+}
+
+.cuenta {
+    padding: 1rem 2rem 1rem 2rem;
+}
+.cuenta h1 {
+    display: flex;
+    justify-self: center;
+    padding-top: 1rem;
+    color: antiquewhite;
+}
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.signinput {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.signlabel {
+    width: 200px;
+    color: antiquewhite !important;
+}
+
+.signquestion {
+   padding-left: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 2rem;
+}
+
+.contenedorsign {
+    border: 0.3vw solid antiquewhite;
+    border-radius: 2%;
+    color: antiquewhite;
+}
+
+.signbutton {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width:620px) {
+    .contenedorsign { 
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size:xx-small;
+    width: 65%;
+    height:auto;
+    margin-top: 5rem;
+    }
+
+    #textcuenta {
+        font-size: small;
+    }
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.signinput {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+    }
+
+.signquestion {
+    padding: 1rem 0rem 3rem 0rem;
+    font-size: xx-small;
+    padding-left: 2rem;
+}
+
+.signlabel {
+    display: none;
+}
+
+.cuenta {
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: x-small;
+}
+}
+
+.mainsign {
+ display: flex;
+ justify-content: center;
+ height: 100%;
+ padding-top: 10rem;
+ padding-bottom: 3rem;
+}
+
+.texcuenta h1 {
+    display: block;
+    justify-content: center;
+}

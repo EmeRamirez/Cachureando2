@@ -80,50 +80,55 @@
 <body>
 
   <!-- AQUÍ VA EL HEADER -->
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <header>
     
-    <div class="isotipo">
-      <a class="navbar-brand" href="#" ><img src="assets/img/Isotipo.png" alt="" width="150 rem" height="60 rem" id="imgnav"></a>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
 
-    <div class="container-fluid bg-black">
-      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item ">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tienda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quiénes somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-          </li>
-        </ul>
+      <div class="isotipo">
+        <a class="navbar-brand" href="#"><img src="assets/img/Isotipo.png" alt="" width="150 rem" height="100 rem"
+            id="imgnav"></a>
       </div>
 
-      <div class="formsearch">
-        <form class="d-flex" role="search" >
-          <input class="form-control me-2" type="search" placeholder="Ingresa búsqueda" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      </div>
+      <div class="container-fluid bg-black">
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <div class="iconoshd">
-        <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
-        <a href="#"><i class="fa-regular fa-user fa-2x"></i></a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Quiénes somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
         </div>
-    </div>
-  </nav>
-</header>
+
+        <div class="formsearch">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Ingresa búsqueda" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <div class="iconoshd">
+          <a href="shopping.html" target="_self"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
+          <a href="login.html" target="_self"><i class="fa-regular fa-user fa-2x"></i></a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
   <main>
 
     <!-- AQUI VA UN SLIDER CAROUSEL -->
@@ -215,16 +220,16 @@
   <!--Footer-->
   <footer>
 
-  <div class="container">
+    <div class="container">
       <div class="col mb-3" id="logoft">
-        <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem" >
+        <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem">
       </div>
 
       <div class="col mb-3" id="column1">
         <ul class="nav flex-column" id="sitioft">
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Inicio</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tienda</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quiénes Somos</a></li>
+          <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Quiénes Somos</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
           <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vende con nosotros</a></li>
         </ul>
@@ -238,22 +243,23 @@
         </ul>
       </div>
 
-      <div class="col mb-3" id="rrss">
-        <h5>Síguenos en RRSS</h5>
+      <div class="col mb-3">
+        <h5 id="titulorrss">Síguenos en RRSS</h5>
         <ul id="rrss">
           <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
         </ul>
       </div>
+
     </div>
 
-      <div class="finalft">
+    <div class="finalft">
       <div>
         <h5>Equipo</h5>
         <h6> Camilo Adones - Andrea Jiménez - Emerson Ramírez</h6>
       </div>
-      
+
       <div>
         <h7 id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
       </div>
@@ -262,13 +268,12 @@
       </div>
     </div>
 
-    </footer>
-  
+  </footer>
 
-  
-  <!-- Footer-->
+  <!-- FIN FOOTER-->
 
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
