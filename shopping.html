@@ -130,7 +130,7 @@
           <p class="lead">Estás a punto de realizar una compra. Por favor, completa todos los campos requeridos.</p>
         </div>
         <div id="contenedorbg">
-          <div class="row g-5" style="padding: 0vw 5vw; padding-bottom: 5vw;">
+          <div class="row g-5" style="padding: 0vw 5vw; padding-bottom: 5vw">
             <div class="col-md-5 col-lg-4 order-md-last" id="carro">
               <h4 class="d-flex justify-content-between align-items-center mb-3" style="color: red">
                 <span class="text-primary">Tu carro</span>
@@ -199,10 +199,10 @@
                   </div>
 
                   <div class="col-sm-6">
-                    <label for="cardid" class="form-label">Número de documento</label>
-                    <input type="number" class="form-control" id="cardid" placeholder="" value="" required>
+                    <label for="carnet" class="form-label">Cédula de Identidad</label>
+                    <input type="text" class="form-control" id="carnet" placeholder="" value="" required>
                     <div class="invalid-feedback">
-                      Número de documento es requerido.
+                      Nombres son requeridos.
                     </div>
                   </div>
 
@@ -344,7 +344,6 @@
           </div>
         </div>
       </main>
-
     </div>
 
 
@@ -369,7 +368,7 @@
           </ul>
         </div>
 
-        <div class="col mb-3" id="contacto">
+        <div class="col mb-3" class="contacto">
           <ul class="nav flex-column">
             <li class="nav-item mb-2">O´Higgins 1818 - Valparaíso</li>
             <li class="nav-item mb-2">32 235 35 35</li>
@@ -378,7 +377,7 @@
         </div>
 
         <div class="col mb-3" id="rrss">
-          <h5>Síguenos en RRSS</h5>
+          <h5 id="titulorrss">Síguenos en RRSS</h5>
           <ul id="rrss">
             <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
             <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
@@ -402,6 +401,7 @@
       </div>
 
     </footer>
+    <script src="js/main.js"></script>
   </body>
 
 </html>

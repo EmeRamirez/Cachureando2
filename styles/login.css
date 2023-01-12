@@ -1,0 +1,195 @@
+#formlogin {
+    width: max-content;
+}
+
+.cuenta {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.cuenta h1 {
+    display: flex;
+    justify-self: center;
+    padding-top: 1rem;
+    color: antiquewhite;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.signinput {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.signlabel {
+    width: 200px;
+    padding-right: 1px;
+    color: antiquewhite !important;
+}
+
+.signquestion {
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.contenedorsign {
+    border: 0.1vw solid antiquewhite;
+    border-radius: 2%;
+    background-color: #000000;
+    opacity: 80%;
+    color: antiquewhite;
+}
+
+.signbutton {
+    display: flex;
+    justify-content: center;
+}
+
+#titulologin h1 {
+    padding-left: 6vw;
+}
+
+.mainsign {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.texcuenta h1 {
+    display: block;
+    justify-content: center;
+}
+
+/* Responsividad tablet login */
+
+@media screen and ((min-width:421px) and (max-width: 768px)) {
+    
+    .contenedorsign {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: xx-small;
+        width: 50%;
+        height: auto;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        }
+
+    /* .form-control {
+        width: 100%;
+        } */
+
+    .titulologin {
+        font-size: small;
+    }
+
+    .signin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .signinput {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .signquestion {
+        padding: 1rem 0rem 3rem 0rem;
+        font-size: xx-small;
+        padding-left: 2rem;
+    }
+
+    .cuenta {
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: x-small;
+    }
+
+    .signlabel {
+        width: 70px;
+        font-size: 1.5vw;
+        padding-right: 5px;
+    }
+
+}
+
+/* Responsividad celular login */
+
+@media screen and (max-width:420px) {
+    .contenedorsign {
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 10px;
+        width: 65%;
+        height: auto;
+        justify-items: center;
+        margin-top: 5rem;
+    }
+
+    .titulologin {
+        font-size: small;
+    }
+
+    .signin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .signinput {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .signquestion {
+        padding: 1rem 0rem 3rem 0rem;
+        font-size: xx-small;
+        padding-left: 2rem;
+    }
+
+    .signlabel {
+        display: none;
+    }
+
+    .cuenta {
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: x-small;
+    }
+
+    .mainsign {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding-top: 5.5rem;
+    }
+
+    .texcuenta h1 {
+        display: block;
+        justify-content: center;
+    }
+
+    #titulologin h1 {
+        padding-left: 0vw;
+    }
+    
+    }

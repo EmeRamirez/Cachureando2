@@ -1,0 +1,157 @@
+.navbar {
+    background-color: #060701 !important;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.iconoshd i {
+    font-size: 2.5vw;
+}
+
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-left: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .navbar-brand:hover, .navbar-brand:focus {
+    color: var(--bs-navbar-brand-hover-color);
+  }
+
+
+.iconoshd,
+.formsearch {
+    z-index: 2000 !important;
+    position: fixed;
+}
+
+.formsearch {
+    padding-right: 6vw;
+}
+
+.panelbtn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2vw;
+    height: 120px;
+}
+
+.nav-item a {
+    color: antiquewhite !important;
+    text-decoration: none;
+    font-size: 18px !important;
+}
+
+li a:hover {
+    transform: translateY(-3%);
+    color: #3b57c6 !important;
+}
+
+#navbarSupportedContent ul {
+    color: antiquewhite !important;
+    padding-left: 3%;
+}
+
+.btn-group {
+    padding: 2vw 2vw !important;
+}
+
+.btn-outline-success {
+    --bs-btn-color: antiquewhite;
+    --bs-btn-border-color: #191b87;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #191b87;
+    --bs-btn-hover-border-color: #191b87;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #191b87;
+    --bs-btn-active-border-color: #191b87;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #191b87;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+}
+
+.iconoshd a:hover {
+    transform: translateY(-3%);
+    color: #3b57c6 !important;
+}
+
+#imgnav {
+    width: 10vw;
+}
+
+/* Responsividad */
+
+@media screen and ((min-width: 421px) and (max-width: 768px)) {
+    
+    .iconoshd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+    #imgnav {
+        width: 12vw;
+    }
+
+    .botonsearch {
+       width: 50px; 
+        height: 25px;
+    }
+    
+    #text {
+        font-size: 8px;
+    }
+
+    .nav-item a {
+        font-size: 14px !important;
+    }
+    }
+
+@media screen and (max-width: 420px) {
+    .navbar {
+        display: block;
+        align-items: center;
+        justify-items: center;
+    }
+    .itemimg {
+        justify-self: center;
+    }
+
+    #fecha {
+        display: none;
+    }
+
+    #boton {
+        font-size: 1em;
+    }
+
+    #formsearch {
+        font-size: 1em;
+    }
+
+    .btn-group {
+        padding: 1vw 1vw !important;
+        font-size: xx-small;
+    }
+
+    #imgnav {
+        width: 20vw;
+    }
+
+    .nav-item a {
+        font-size: 12px !important;
+    }
+
+}
