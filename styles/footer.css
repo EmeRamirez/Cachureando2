@@ -16,10 +16,6 @@ footer p {
     font-size: 1.8vw;
 }
 
-#logo2 {
-    height: 50%;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr;
@@ -91,12 +87,22 @@ footer p {
     padding-right: 20px;
 }
 
+#rrss li i {
+    color: antiquewhite;
+}
+
+#rrss li i:hover {
+    color: #3b57c6;
+}
+
 /* Responsividad */
 
 @media screen and (max-width:768px) {
+    
     #logoft {
         display: none;
     }
+    
     .container {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2px;
