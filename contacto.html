@@ -99,7 +99,7 @@
 
 <main>
   <!-- Formulario de Contacto -->
-
+<form>
 <div id="contenedor-formulario">
   <div id="subcont-form">
     <div class="row">
@@ -108,27 +108,41 @@
             <p>Te responderemos a la brevedad</p>
         </div>
         <div class="col-6  input-formulario">
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+          <input type="text" class="form-control" placeholder="Nombre" id="nombre-usuario">
         </div>
         <div class="col-6  input-formulario">
-          <input type="text" class="form-control" placeholder="Email" aria-label="Last name">
+          <input type="text" class="form-control" placeholder="Email" id="correo-usuario">
         </div>
         <div class="col-12  input-formulario">
-            <input type="text" class="form-control" placeholder="Asunto" aria-label="First name">
+            <input type="text" class="form-control" placeholder="Asunto">
           </div>
           <div class="col-12  input-formulario">
             <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingrese Mensaje" rows="3"></textarea>
           </div>
           <div class="col-12" id="cont-btn-form">
             <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-primary" id="boton-formulario" type="button">ENVIAR</button>
+              <button class="btn btn-primary" id="boton-formulario" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="mostrarMensaje()">ENVIAR</button>
             </div>
           </div>
       </div>
   </div>
 </div>
+</form>
 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" id="cont-mensaje-form">
+        <div id="cont-mensaje-head"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+        <div id="cont-mensaje-titulo"><h1 id="h1-mensaje"></h1></div>
+        <div id="cont-mensaje-body"><h2 id="h2-mensaje"></h2></div>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Formulario de Contacto -->
+
 </main>
 
   <!--Footer-->
@@ -180,6 +194,7 @@
   </footer>
   <!-- Footer-->
 
+  <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>"
 </body>
