@@ -17,11 +17,7 @@ div .row {
     width: 50% !important;
 }
 
-.lead {
-    color: antiquewhite;
-}
-
-#titulocarro {
+.lead, #titulocarro {
     color: antiquewhite;
 }
 
@@ -30,9 +26,6 @@ div .row {
     grid-template-columns: 1fr !important;
 }
 
-#carddesc {
-    width: 50vw !important;
-}
 
 /* Responsividad tablet shopping */
 
@@ -45,10 +38,6 @@ div .row {
     align-content: center;
 }
 
-#carddesc {
-    width: 50vw !important;
-}
-
 .carro {
     width: 60%;
     font-size: 10px !important;
@@ -56,6 +45,10 @@ div .row {
 
 ::placeholder {
     font-size: 12px !important;
+}
+
+h2 {
+    font-size: 22px;
 }
 
 h4 {
@@ -81,10 +74,15 @@ button {
 
 @media screen and (max-width: 980) {
     
-    div .row {
+    /* div .row {
         display: flex;
         justify-content: center;
         align-content: center;
-    }
+    } */
 
 }
+
+/* @media screen and (max-width: 780) {
+   
+   
+} */
