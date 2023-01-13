@@ -8,12 +8,12 @@ footer {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    padding-top: 25px;
+    padding-top: 5px;
 }
 
 footer a,
 footer p {
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 
 .container {
@@ -22,6 +22,7 @@ footer p {
     margin-left: 0%;
     margin-right: 0%;
     padding: 0;
+    padding-top: 10px;
     max-width: 100%;
     font-size: 14px;
 }
@@ -62,6 +63,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 0%;
 }
 #rrss li {
     justify-self: center;
@@ -106,26 +108,59 @@ footer p {
     .container {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2px;
+        padding-top: 10px;
         padding-left: 25px;
         padding-right: 25px;
         max-width: none;
     }
 
-    #copyright {
-        font-size: 10px;
+    #sitioft a {
+        font-size: 11px !important;
     }
+
+    #copyright {
+        font-size: 13px;
+    }
+
+    #rrss li {
+        justify-self: center;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    #titulorrss {
+        font-size: 11px;
+        margin-bottom: 0px;
+     }
 
     #rrss {
         display: flex;
         flex-direction: row !important;
+        justify-content: center;
+        padding: 3Px;
     }
     .rrss {
         display: flex;
         flex-direction: row !important;
     }
+
+    #equipo h5 {
+        font-size: 12px;
     }
 
-/* RESPONSIVIDAD */
+    #equipo h6 {
+        font-size: 10px;
+    }
+
+    #contacto li {
+        font-size: 11px;
+    }
+
+    #fecha {
+        font-size: 12px;
+    }
+    }
+
+
 @media screen and (max-width:1366px) {
     .container {
         display: grid;
@@ -164,17 +199,12 @@ footer p {
     grid-template-rows: 1fr;
 }
 
-.container .rrss {
-    grid-column-start: -3;
-    grid-column-end: -1;
-}
-
 #rrss {
     display: flex;
     flex-direction: row;
 }
 
 ul #rrss {
-    padding: 0px !important;
+    padding-left: 0px !important;
 }
 }

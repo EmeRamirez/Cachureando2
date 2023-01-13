@@ -18,13 +18,13 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 2vw;
+    padding-bottom: 0;
 }
 
 .signinput {
     display: flex;
-    justify-content: start;
+    justify-content: flex-end;
     width: 100%;
     padding: 1rem 2rem 1rem 2rem;
 }
@@ -32,6 +32,7 @@
 .signlabel {
     width: 200px;
     padding-right: 1px;
+    font-size: 1vw !important;
     color: antiquewhite !important;
 }
 
@@ -42,6 +43,7 @@
 }
 
 .contenedorsign {
+    width: 500px;
     border: 0.1vw solid antiquewhite;
     border-radius: 2%;
     background-color: #000000;
@@ -62,8 +64,8 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .texcuenta h1 {
@@ -99,13 +101,6 @@
         padding-bottom: 10rem;
     }
 
-    .signinput {
-        display: flex;
-        justify-content: start;
-        width: 100%;
-        padding: 1rem 2rem 1rem 2rem;
-    }
-
     .signquestion {
         padding: 1rem 0rem 3rem 0rem;
         font-size: xx-small;
@@ -120,7 +115,7 @@
     .signlabel {
         width: 70px;
         font-size: 1.5vw;
-        padding-right: 5px;
+        padding-right: 10px;
     }
     
 
@@ -154,7 +149,7 @@
         display: flex;
         justify-content: start;
         width: 100%;
-        padding: 1rem 2rem 1rem 2rem;
+        padding: 1rem 3rem 1rem 3rem;
     }
 
     .signquestion {

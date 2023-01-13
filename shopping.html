@@ -75,14 +75,13 @@
 
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-
       <div class="isotipo">
-        <a class="navbar-brand" href="#"><img src="assets/img/Isotipo.png" alt="" width="150 rem" height="100 rem"
-            id="imgnav"></a>
+        <a class="navbar-brand" href="#"><img src="assets/img/Isotipo.png" alt="" id="imgnav" class="itemimg"></a>
       </div>
-
-      <div class="container-fluid bg-black">
-        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+      <!-- Menu  -->
+      <div class="container-fluid bg-black" class="menuhamburg">
+        
+                <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -103,21 +102,30 @@
               <a class="nav-link" href="#">Contacto</a>
             </li>
           </ul>
-        </div>
+        </div> 
+      </div>
 
-        <div class="formsearch">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Ingresa búsqueda" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
+    </nav>
+    <!-- Menu  -->
 
-        <div class="iconoshd">
-          <a href="#"><i class="fa-solid fa-cart-shopping fa-2x"></i></a>
-          <a href="login.html"><i class="fa-regular fa-user fa-2x"></i></a>
+    <!-- Panel Btn  -->
+    <div class="panelbtn">
+      <div class="formsearch">
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" class="btnsearch" class="botonsearch">
+            Buscar
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" class="btnsearch2">
+            <input class="form-control me-2"  type="search" placeholder="Ingresa búsqueda" aria-label="Search"  style="width:300px">
+          </div>
         </div>
       </div>
-    </nav>
+
+      <div class="iconoshd">
+        <a href="shopping.html" target="_blank"><i class="fa-solid fa-cart-shopping" id="boton" class="item"></i></a>
+        <a href="login.html" target="_blank"><i class="fa-regular fa-user" id="boton" class="item"></i></a>
+      </div>
+    </div>
   </header>
 
   <body class="bg-light">
