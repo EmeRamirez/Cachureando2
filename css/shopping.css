@@ -1,0 +1,80 @@
+div .row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.carro, .datoscompra {
+    padding: 2vw;
+}
+
+.contenedorbg {
+    background-color: rgb(34, 33, 33) !important;
+    color: antiquewhite;
+}
+
+
+.lead, #titulocarro {
+    color: antiquewhite;
+}
+
+#finalshop {
+    display: grid;
+    grid-template-columns: 1fr !important;
+}
+
+.btn-tucarro {
+    color: rgb(240, 184, 111) !important;
+}
+
+.btn-num-tucarro {
+    background-color:  rgb(90, 89, 4) !important;
+    ;
+}
+
+
+/* Responsividad tablet shopping */
+
+@media screen and  (max-width: 768px) { 
+    
+div .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.carro {
+    width: 60%;
+    font-size: 10px !important;
+}
+
+::placeholder {
+    font-size: 12px !important;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px !important;
+    height: fit-content;
+}
+h6 {
+    font-size: 12px;
+}
+
+button {
+    font-size: 14px !important;
+}
+
+.form-control {
+    font-size: 0.6rem;
+}
+}
+

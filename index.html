@@ -8,15 +8,18 @@
   <title>Cachureros Store</title>
 
   <link href="styles/normalize.css" rel="stylesheet">
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles/styles.css" rel="stylesheet">
+  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,1000&family=Satisfy&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
-  
+  <script src=""></script>
+
+  <script src="https://kit.fontawesome.com/9bf55c7eb1.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,16 +29,15 @@
       <a class="navbar-brand" href="#"><img src="assets/img/cachurea-banner-logo.png" alt="" class="banner-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
         <span><i class="fa-sharp fa-solid fa-bars"></i></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
+            <a class="nav-link active" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Tienda</a>
+            <a class="nav-link active" href="galeria.html">Tienda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Nosotros</a>
@@ -69,10 +71,7 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Ingresar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Nuevo Usuario</a>
+              <a class="nav-link active" href="login.html">Ingresar</a>
             </li>
           </ul>
         </div>
@@ -86,7 +85,7 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Aquí va un resumen del carrito</a>
+              <a class="nav-link active" href="shopping.html">Ir al carrito</a>
             </li>
           </ul>
         </div>
@@ -172,55 +171,52 @@
 
   <!--Footer-->
   <footer>
-    <div id="cont-ft-1">
-      <img id="logo2" src="assets/img/logo1.png" alt="">
+
+    <div class="container">
+      <div class="col mb-3" id="logoft">
+        <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem">
+      </div>
+
+      <div class="col mb-3" id="column1">
+        <ul class="nav flex-column" id="sitioft">
+          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tienda</a></li>
+          <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Quiénes Somos</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vende con nosotros</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3" class="contacto">
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">O´Higgins 1818 - Valparaíso</li>
+          <li class="nav-item mb-2">32 235 35 35</li>
+          <li class="nav-item mb-2">cachureando@gmail.com</li>
+        </ul>
+      </div>
+
+      <div class="col mb-3" id="rrss">
+        <h5 id="titulorrss">Síguenos en RRSS</h5>
+        <ul id="rrss">
+          <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
+        </ul>
+      </div>
     </div>
 
-    <div id="cont-sitio">
-      <div class="container text-center">
-        <div class="row row-cols-4">
-          <div class="col-2">
-            <ul>
-              <li><a href="#">Quiénes somos</a></li>
-              <li><a href="#">Tienda</a></li>
-              <li><a href="#">Términos y condiciones</a></li>
-            </ul>
-          </div>
-          <div class="col-2">
-            <ul>
-              <li><a href="#">Mapa del sitio</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="contacto.html">Vende con nosotros</a></li>
-            </ul>
-          </div>
-          <div class="col-8"></div>
-          <div class="col-12">
-            <p>&copy;2022 Cachureando - Derechos reservados</p>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div id="contactoft">
-      <div>
-        <p>O'Higgins 1818 - Valparaíso</p>
-        <p>Teléfono: 235 35 35</p>
-        <p>cachureando@gmail.com</p>
-      </div>
-      <div id="cont-rrss">
-        <a href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"
-            style="font-size: 45px;color: white"></i></a>
-        <a href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"
-            style="font-size: 45px;color: white"></i></a>
-        <a href="#"><i class="fa-brands fa-square-whatsapp" style="font-size: 45px;color: white"></i></a>
-      </div>
+    <div>
+      <h7 id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
     </div>
 
   </footer>
-  <!-- Footer-->
+
+  <!-- FIN FOOTER-->
 
   <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>"
+  <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

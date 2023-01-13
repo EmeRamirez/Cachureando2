@@ -1,0 +1,210 @@
+footer {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-gap: 2px;
+    width: auto;
+    background-color: #000000;
+    color: antiquewhite;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+footer a,
+footer p {
+    font-size: 1.5vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 0;
+    padding-top: 10px;
+    max-width: 100%;
+    font-size: 14px;
+}
+
+.column1 {
+    width: 100%;
+    list-style-type: none;
+}
+
+#sitioft a {
+    color: antiquewhite !important;
+}
+
+#sitioft a:hover {
+    color: #3b57c6 !important;
+}
+
+#titulorrss {
+    font-size: 14px;
+}
+
+.finalft {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
+
+#rrss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0%;
+}
+#rrss li {
+    justify-self: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#fecha {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aquamarine;
+}
+
+#copyright {
+    display: flex;
+    justify-content: center;
+}
+
+#cont-rrss {
+    padding-left: 35px;
+    padding-right: 20px;
+}
+
+#rrss li i {
+    color: antiquewhite;
+}
+
+#rrss li i:hover {
+    color: #3b57c6;
+}
+
+/* Responsividad */
+
+@media screen and (max-width:768px) {
+    
+    #logoft {
+        display: none;
+    }
+    
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2px;
+        padding-top: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        max-width: none;
+    }
+
+    #sitioft a {
+        font-size: 11px !important;
+    }
+
+    #copyright {
+        font-size: 13px;
+    }
+
+    #rrss li {
+        justify-self: center;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    #titulorrss {
+        font-size: 11px;
+        margin-bottom: 0px;
+     }
+
+    #rrss {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        padding: 3Px;
+    }
+    .rrss {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    #equipo h5 {
+        font-size: 12px;
+    }
+
+    #equipo h6 {
+        font-size: 10px;
+    }
+
+    #contacto li {
+        font-size: 11px;
+    }
+
+    #fecha {
+        font-size: 12px;
+    }
+    }
+
+
+@media screen and (max-width:1366px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1 fr 1fr 1fr 1fr !important;
+        grid-gap: 10px;
+    }
+}
+
+     
+@media screen and (max-width: 420px) {
+    footer .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: auto;
+        background-color: #000000;
+        color: antiquewhite;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        padding-top: 25px;
+        max-height: auto;
+    }
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+#finalft, #equipo {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#rrss {
+    display: flex;
+    flex-direction: row;
+}
+
+ul #rrss {
+    padding-left: 0px !important;
+}
+}

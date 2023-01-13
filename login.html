@@ -64,88 +64,79 @@
         </div>
         <!--Dropdown de Búsqueda-->
 
-         <!--Dropdown de Perfil-->
-         <div class="btn-group" id="boton-perfil">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
-            <li class="nav-item">
-              <a class="nav-link active" href="login.html">Ingresar</a>
-            </li>
-          </ul>
-        </div>
-        <!--Dropdown de Perfil-->
+  <!--Dropdown de Perfil-->
+  <div class="btn-group" id="boton-perfil">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <i class="fa-solid fa-user"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
+      <li class="nav-item">
+        <a class="nav-link active" href="login.html">Ingresar</a>
+      </li>
+    </ul>
+  </div>
+  <!--Dropdown de Perfil-->
 
-        <!--Dropdown de Carrito-->
-        <div class="btn-group" id="boton-perfil">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
-            <li class="nav-item">
-              <a class="nav-link active" href="shopping.html">Ir al carrito</a>
-            </li>
-          </ul>
-        </div>
-        <!--Dropdown de Carrito-->
+  <!--Dropdown de Carrito-->
+  <div class="btn-group" id="boton-perfil">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
+      <li class="nav-item">
+        <a class="nav-link active" href="shopping.html">Ir al carrito</a>
+      </li>
+    </ul>
+  </div>
+  <!--Dropdown de Carrito-->
 
       </div>
     </div>
   </nav>
-</body>
 
-<main>
-  <!-- Formulario de Contacto -->
-<form>
-<div id="contenedor-formulario">
-  <div id="subcont-form">
-    <div class="row">
-        <div class="col-12 titulo-contacto">
-            <h1>CONTACTANOS</h1>
-            <p>Te responderemos a la brevedad</p>
-        </div>
-        <div class="col-6  input-formulario">
-          <input type="text" class="form-control" placeholder="Nombre" id="nombre-usuario">
-        </div>
-        <div class="col-6  input-formulario">
-          <input type="text" class="form-control" placeholder="Email" id="correo-usuario">
-        </div>
-        <div class="col-12  input-formulario">
-            <input type="text" class="form-control" placeholder="Asunto">
+   <main class="mainsign">
+    <div class="contenedorsign">
+      <div id="titulologin">
+        <h1>Accede a tu cuenta</h1>
+      </div>
+      <div class="d-block justify-content-center" class="signin">
+        <form>
+          <div class="signinput">
+            <label for="exampleDropdownFormEmail1" class="signlabel">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="nombre@example.com">
           </div>
-          <div class="col-12  input-formulario">
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ingrese Mensaje" rows="3"></textarea>
+          <div class="signinput">
+            <label for="exampleDropdownFormPassword1" class="signlabel">Contraseña</label>
+            <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+              placeholder="Ingresa tu contraseña">
           </div>
-          <div class="col-12" id="cont-btn-form">
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-primary" id="boton-formulario" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" onclick="mostrarMensaje()">ENVIAR</button>
+          <br>
+          <div class="signinput">
+            <div>
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck" class="signlabel">
+                Recordarme
+              </label>
+              <br>
             </div>
           </div>
-      </div>
-  </div>
-</div>
-</form>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body" id="cont-mensaje-form">
-        <div id="cont-mensaje-head"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-        <div id="cont-mensaje-titulo"><h1 id="h1-mensaje"></h1></div>
-        <div id="cont-mensaje-body"><h2 id="h2-mensaje"></h2></div>
+          <div class="signbutton">
+            <button type="submit" class="btn btn-primary">Ingresa</button>
+          </div>
+        </form>
+        <div class="signquestion">
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">No tienes cuenta? Regístrate</a>
+          <a class="dropdown-item" href="#">Olvidaste la clave?</a>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-  <!-- Formulario de Contacto -->
+  </main>
 
-</main>
 
-  <!--Footer-->
+
   <footer>
 
     <div class="container">
@@ -188,9 +179,8 @@
     </div>
 
   </footer>
-  <!-- Footer-->
 
-  <script src="js/main.js"></script>
+
   <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
   <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
