@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cachureros Store</title>
 
-  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
@@ -105,7 +105,7 @@
           <p class="lead">Estás a punto de realizar una compra. Por favor, completa todos los campos requeridos.</p>
         </div>
         <div class="contenedorbg">
-          <div class="row g-5" style="padding: 0vw 5vw; padding-bottom: 5vw" class="carrototal">
+          <div class="row g-5" class="carrototal">
             <div class="col-md-5 col-lg-4 order-md-last" class="carro">
               <h4 class="d-flex justify-content-between align-items-center mb-3" style="color: red">
                 <span class="text-primary btn-tucarro">Tu carro</span>
@@ -173,7 +173,7 @@
                     </div>
                   </div>
 
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <label for="carnet" class="form-label">Cédula de Identidad</label>
                     <input type="text" class="form-control" id="carnet" placeholder="" value="" required>
                     <div class="invalid-feedback">
@@ -183,7 +183,7 @@
 
                   <div class="col-12">
                     <label for="username" class="form-label">Usuario</label>
-                    <div class="input-group has-validation">
+                    <div class="input-group has-validation input-usuario">
                       <span class="input-group-text">@</span>
                       <input type="text" class="form-control" id="username" placeholder="Usuario" required>
                       <div class="invalid-feedback">
@@ -375,9 +375,9 @@
       </div>
 
     </footer>
+    
+
     <script src="js/main.js"></script>
-
-
     <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>

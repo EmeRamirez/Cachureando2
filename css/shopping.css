@@ -8,9 +8,26 @@ div .row {
     padding: 2vw;
 }
 
+
+.contenedor-carro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-carro .form-control {
+   
+}
+
 .contenedorbg {
     background-color: rgb(34, 33, 33) !important;
     color: antiquewhite;
+    padding: 4vw 3vw;
+    max-width: 100%;
+}
+
+.input-usuario {
+    
 }
 
 
@@ -75,6 +92,30 @@ button {
 
 .form-control {
     font-size: 0.6rem;
+}
+
+#carddesc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+#carddesc .input-group {
+    width: 60vw;
+}
+
+.contenedor-carro .py-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5vw;
+}
+
+.contenedor-carro{
+    padding-bottom: 15vw;
 }
 }
 

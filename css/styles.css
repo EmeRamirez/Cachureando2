@@ -206,75 +206,6 @@ body {
     background-color: #060701 !important;
 }
 
-/*Footer*/
-
-/* footer, footer a {
-    background-color: #000000;
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr 0.5fr;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    padding-top: 25px;
-    max-height: 400px;
-}
-
-
-#contactoft {
-    display: grid;
-    grid-template-rows: 120px 100px 0px;
-    text-align: center;
-    height: 260px;
-    padding-top: 6%;
-}
-
-#logo2 {
-    height: 70%;
-    align-items: center;
-    justify-content: center;
-    padding-left: 14%;
-    padding-top: 15%;
-}
-
-#cont-ft-1 {
-    height: 260px;
-}
-
-#cont-sitio {
-    height: 260px;
-    text-align: flex start;
-    padding-left: 0px;
-}
-
-#cont-sitio a {
-    text-align: left;
-    width: 100%;
-    color: white;
-}
-
-#cont-rrss {
-    display: flex;
-    padding-left: 80px;
-    text-align: center;
-}
-
-.row-row-cols-3, .col-2 ul, .col-3 ul, .col-10, .col-10 ul {
-    padding: 0px;
-}
-
-.col-2 ul li a{
-    display: flex;
-}
-
-.col-12 p {
-    padding-top: 30px;
-    padding-left: 25%;
-    font-size: 12px;
-} */
-/*Footer*/
-
-
 #carouselExampleInterval {
     padding: 3% 15%;
 }
@@ -400,6 +331,19 @@ body {
     #contenedor-busqueda, #contenedor-perfil {
         left: 0%;
     }
+
+    .col-6 {
+        width: auto;
+    }
+
+    #cont-mensaje-body h2 {
+        font-size: 2.5vw;
+    }
+
+    .modal-dialog {
+        margin-top: 35%;
+    }
+
 }
 
 @media only screen and (max-width:768px) {
