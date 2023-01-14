@@ -325,6 +325,55 @@ body {
   }
 
 
+  /* ===================  CSS ENCUESTA =================== */
+
+#cont-ext-encuesta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5vw;
+}
+
+  #cont-princ-encuesta {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: #0000007e;
+    border-radius: 25px;
+    padding: 2vw 5vw; 
+  }
+
+  #cont-princ-encuesta h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 2.2vw;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+    padding-bottom: 1vw;
+    color: rgb(255, 226, 186);
+  }
+
+  #contenedor-estrellas {
+    padding-bottom: 1vw;
+    display: flex;
+    flex-direction: row;
+    gap:1vw;
+  }
+
+  #contenedor-estrellas .fa-solid{
+    color: #b9bb49;
+    scale: 115%;
+  }
+
+
+  #contenedor-estrellas .fa-regular {
+    cursor: pointer;
+  }
+
+
+  /* ===================  CSS ENCUESTA =================== */
 
 
 @media only screen and (max-width:767px) {
@@ -342,6 +391,14 @@ body {
 
     .modal-dialog {
         margin-top: 35%;
+    }
+
+    #cont-ext-encuesta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8vw;
     }
 
 }
@@ -402,40 +459,6 @@ body {
         margin-top: 20px;
     }
 
-    footer a, footer p {
-        font-size: 2.5vw;
-    }
-
-    #logo2 {
-        height: 35%;
-        padding-left: 25px;
-    }
-
-    .col-2 {
-        padding-left: 1%;
-        width: 40%;
-    }
-
-    .col-12 {
-        width: 120%;
-        padding: 0%;
-    }
-
-    #cont-rrss {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    #contactoft {
-        padding-right: 30px;
-        padding-top: 25px;
-    }
-
-    #cont-rrss a i {
-        font-size: 8vw !important;
-        padding-right: 3%;
-    }
-
     #texto-titulos2 {
         margin-top: 2%;
         font-size: 7vw;
@@ -466,48 +489,4 @@ body {
     footer{
         padding-top: 0;
     }
-}
-
-@media only screen and (max-width:400px) {
-    #logo2 {
-        height: 28%;
-        padding-left: 25px;
-    }
-
-    .col-2 {
-        padding-left: 1%;
-        width: 40%;
-    }
-
-    .col-12 {
-        width: 160%;
-        padding: 0%;
-    }
-
-    .col-12 p {
-        width: 150%;
-        padding-left: 0;
-        padding-top: 45px;
-        padding-right: 60px;
-        font-size: 2.5vw;
-
-    }
-
-    #cont-rrss {
-        padding-left: 5px;
-        padding-right: 5px;
-        align-items: flex-start;
-    }
-
-    #cont-rrss a {
-        font-size: 8vw !important;
-        padding-right: 3%;
-        padding-top: 0;
-    }
-
-    #contactoft {
-        padding-right: 10px;
-        padding-top: 25px;
-    }
-    
 }

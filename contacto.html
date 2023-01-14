@@ -10,7 +10,6 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
@@ -143,6 +142,25 @@
 </div>
   <!-- Formulario de Contacto -->
 
+<!--Encuesta de Satisfacción-->
+<div id="cont-ext-encuesta">
+  <div id="cont-princ-encuesta">
+    <div id="titulo-encuesta"><h1>¿Qué te parece nuestro sitio?</h1></div>
+    <div id="contenedor-estrellas">
+      <div title="Muy mala Experiencia" onclick="calificarPagina(1)"><i id="estrella0" class="fa-regular fa-star fa-3x"></i></div>
+      <div title="No la recomendaría" onclick="calificarPagina(2)"><i id="estrella1" class="fa-regular fa-star fa-3x"></i></div>
+      <div title="Cumple con mis expectativas" onclick="calificarPagina(3)"><i id="estrella2" class="fa-regular fa-star fa-3x"></i></div>
+      <div title="Muy buen sitio" onclick="calificarPagina(4)"><i id="estrella3" class="fa-regular fa-star fa-3x"></i></div>
+      <div title="Un sitio sobresaliente" onclick="calificarPagina(5)"><i id="estrella4" class="fa-regular fa-star fa-3x"></i></div>
+    </div>
+
+
+
+<!--Encuesta de Satisfacción-->
+
+
+
+
 </main>
 
   <!--Footer-->
@@ -181,15 +199,25 @@
       </div>
     </div>
 
-    </div>
+    <div class="finalft" id="finalftshop">
+      <div class="itemfshop">
+      <div>
+          <h7 class="copy" id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
+      </div>
 
-    <div>
-      <h7 id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
+      <br>
+
+      <div>
+        <h5 id="fecha">Aquí va la fecha</h5>
+      </div>
+    </div>
     </div>
 
   </footer>
   <!-- Footer-->
 
+
+  <script src="js/lib/jquery-3.6.3.min.js"></script>
   <script src="js/main.js"></script>
   <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
   <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>

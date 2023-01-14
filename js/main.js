@@ -1,8 +1,3 @@
-var fecha = document.getElementById('fecha');
-setInterval(function () {
-    var data = new Date();
-    fecha.innerHTML = data.toLocaleTimeString();
-},1000);
 
 // Esta parte es la asignación de atajos para acceder a un elemento dentro del documento HTML
 let tituloMsj = document.querySelector('#h1-mensaje');
@@ -26,3 +21,20 @@ let mostrarMensaje = () => {
     textoMsj.innerHTML = "Debe ingresar un nombre y correo válidos.";
   }
 }
+
+//Función para mostrar la hora en el footer
+let fecha = document.getElementById('fecha');
+setInterval(function () {
+    var data = new Date();
+    fecha.innerHTML = data.toLocaleTimeString();
+},1000);
+
+
+//Funcion para calificar página
+let calificarPagina = (opcion) => {
+  for (let i=0;i<opcion;i++){
+    $("#estrella"+i).removeClass("fa-regular");
+    $("#estrella"+i).addClass("fa-solid"); 
+    console.log(i);  
+  } 
+} 
