@@ -32,6 +32,11 @@ setInterval(function () {
 
 //Funcion para calificar página
 let calificarPagina = (opcion) => {
+  for (let i=0;i<5;i++){
+    $("#estrella"+i).removeClass("fa-solid");
+    $("#estrella"+i).addClass("fa-regular"); 
+  }
+
   for (let i=0;i<opcion;i++){
     $("#estrella"+i).removeClass("fa-regular");
     $("#estrella"+i).addClass("fa-solid"); 

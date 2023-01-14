@@ -372,6 +372,25 @@ body {
     cursor: pointer;
   }
 
+  .modal-body {
+    background-color: #515a27;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .txt-modal-encuesta {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8vw !important;
+    font-weight: 900 !important;
+    letter-spacing: 1vw !important;
+    margin: 0;
+    padding: 0.5vw;
+    text-align: center;
+  }
+
 
   /* ===================  CSS ENCUESTA =================== */
 
