@@ -2,6 +2,12 @@
 @import url("footer.css");
 @import url("login.css");
 @import url("shopping.css");
+
+@font-face {
+    font-family: Atomic;
+    src: url(../assets/font/ATOMICCLOCKRADIO.TTF);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -332,6 +338,10 @@ body {
     text-align: center;
 }
 
+#fecha {
+    font-family: 'Atomic';
+}
+
 
 /* ===================  CSS ENCUESTA =================== */
 
@@ -492,5 +502,17 @@ body {
     }
     footer {
         padding-top: 0;
+    }
+
+    #contenedor-estrellas .fa-solid , #contenedor-estrellas .fa-regular {
+        scale: 55%;
+    }
+
+    #contenedor-estrellas {
+        gap:0;
+    }
+
+    #titulo-encuesta {
+        padding-top: 2vw;
     }
 }
