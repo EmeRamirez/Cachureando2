@@ -2,230 +2,219 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cachureros Store</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cachureros Store</title>
 
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,1000&family=Satisfy&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
-  <script src=""></script>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,1000&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+    <script src=""></script>
 
-  <script src="https://kit.fontawesome.com/9bf55c7eb1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9bf55c7eb1.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img src="assets/img/cachurea-banner-logo.png" alt="" class="banner-logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="assets/img/cachurea-banner-logo.png" alt="" class="banner-logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fa-sharp fa-solid fa-bars"></i></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="galeria.html">Tienda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
 
-        <!--Dropdown de Búsqueda-->
-        <div class="btn-group" id="boton-busqueda">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
+                <!--Dropdown de Búsqueda-->
+                <div class="btn-group" id="boton-busqueda">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-busqueda">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><i
+                    <ul class="dropdown-menu dropdown-menu-end" id="contenedor-busqueda">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i
                   class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-          </ul>
-        </div>
-        <!--Dropdown de Búsqueda-->
+                        </form>
+                    </ul>
+                </div>
+                <!--Dropdown de Búsqueda-->
 
-        <!--Dropdown de Perfil-->
-        <div class="btn-group" id="boton-perfil">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
+                <!--Dropdown de Perfil-->
+                <div class="btn-group" id="boton-perfil">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-user"></i>
           </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
-            <li class="nav-item">
-              <a class="nav-link active" href="login.html">Ingresar</a>
-            </li>
-          </ul>
-        </div>
-        <!--Dropdown de Perfil-->
+                    <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="login.html">Ingresar</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Dropdown de Perfil-->
 
-        <!--Dropdown de Carrito-->
-        <div class="btn-group" id="boton-perfil">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
-            aria-expanded="false">
+                <!--Dropdown de Carrito-->
+                <div class="btn-group" id="boton-perfil">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
-          <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
-            <li class="nav-item">
-              <a class="nav-link active" href="shopping.html">Ir al carrito</a>
-            </li>
-          </ul>
+                    <ul class="dropdown-menu dropdown-menu-end" id="contenedor-perfil">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="shopping.html">Ir al carrito</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Dropdown de Carrito-->
+
+            </div>
         </div>
-        <!--Dropdown de Carrito-->
+    </nav>
 
-      </div>
-    </div>
-  </nav>
-
-  <main>  
+    <main>
         <!-- AQUI VA UN SLIDER CAROUSEL -->
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img src="assets/img/foto1-adap.png" class="d-block w-100" alt="..." id="foto-1">
-              <div class="carousel-caption d-md-block" id="cont-foto1">
-                <h5 id="texto-titulos1">¡Cachurea con Nosotros!</h5>
-                <p id="texto-p1">Le damos una nueva vida a tus artículos perdidos</p>
-              </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <img src="assets/img/foto2-adap.png" class="d-block w-100" alt="..." id="foto-2">
-              <div class="carousel-caption d-md-block" id="cont-foto2">
-                <p id="texto-p2">Sorpréndete con nuestras increibles</p>
-                <h5 id="texto-titulos2"><a href="#">OFERTAS</a></h5>
-              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="assets/img/foto1-adap.png" class="d-block w-100" alt="..." id="foto-1">
+                    <div class="carousel-caption d-md-block" id="cont-foto1">
+                        <h5 id="texto-titulos1">¡Cachurea con Nosotros!</h5>
+                        <p id="texto-p1">Le damos una nueva vida a tus artículos perdidos</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="assets/img/foto2-adap.png" class="d-block w-100" alt="..." id="foto-2">
+                    <div class="carousel-caption d-md-block" id="cont-foto2">
+                        <p id="texto-p2">Sorpréndete con nuestras increibles</p>
+                        <h5 id="texto-titulos2"><a href="#">OFERTAS</a></h5>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/img/foto3-adap.png" class="d-block w-100" alt="..." id="foto-3">
+                    <div class="carousel-caption d-md-block" id="cont-foto3">
+                        <h5 id="texto-titulos3">Third slide label</h5>
+                        <p id="texto-p3">Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="assets/img/foto4-adap.png" class="d-block w-100" alt="..." id="foto-4">
+                    <div class="carousel-caption d-md-block" id="cont-foto4">
+                        <h5 id="texto-titulos4">Third slide label</h5>
+                        <p id="texto-p4">Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assets/img/foto3-adap.png" class="d-block w-100" alt="..." id="foto-3">
-              <div class="carousel-caption d-md-block" id="cont-foto3">
-                <h5 id="texto-titulos3">Third slide label</h5>
-                <p id="texto-p3">Some representative placeholder content for the third slide.</p>
-              </div>
+        </div>
+        <!-- Slider Carousel-->
+
+
+        <!-- Contenedor de cartas -->
+        <div id="contenedor-cartas">
+            <div class="card" style="width: 18rem;" class="card">
+                <img src="assets/img/tracking-white.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Compromiso de entrega rápida a todo el país. Recibe en menos de 24 horas en la region de Valparaiso.
+                    </p>
+                </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="assets/img/foto4-adap.png" class="d-block w-100" alt="..." id="foto-4">
-              <div class="carousel-caption d-md-block" id="cont-foto4">
-                <h5 id="texto-titulos4">Third slide label</h5>
-                <p id="texto-p4">Some representative placeholder content for the third slide.</p>
-              </div>
+            <div class="card" style="width: 18rem;" class="card">
+                <img src="assets/img/insignia-white.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Experiencia y calidad de servicio garantizada. Contamos con cientos de ventas concretadas y feedback positivo de clientes.</p>
+                </div>
             </div>
-          </div>
+            <div class="card" style="width: 18rem;" class="card">
+                <img src="assets/img/exchange-white.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Desenpolva tus artículos con nosotros, generemos economía circular. Compramos tus artículos con transparencia y a precios justos.</p>
+                </div>
+            </div>
         </div>
-      <!-- Slider Carousel-->
-    
+        <!-- Contenedor de cartas -->
+    </main>
 
-    <!-- Contenedor de cartas -->
-    <div id="contenedor-cartas">
-      <div class="card" style="width: 18rem;" class="card">
-        <img src="assets/img/tracking-white.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Compromiso de entrega rápida a todo el país. Recibe en menos de 24 horas en la region de
-            Valparaiso.</p>
+    <!--Footer-->
+    <footer>
+
+        <div class="container2">
+            <div class="col mb-3" id="logoft">
+                <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem">
+            </div>
+
+            <div class="col mb-3" id="column1">
+                <ul class="nav flex-column" id="sitioft">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tienda</a></li>
+                    <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Quiénes Somos</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vende con nosotros</a></li>
+                </ul>
+            </div>
+
+            <div class="col mb-3" class="contacto">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">O´Higgins 1818 - Valparaíso</li>
+                    <li class="nav-item mb-2">32 235 35 35</li>
+                    <li class="nav-item mb-2">cachureando@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="col mb-3" id="rrss">
+                <h5 id="titulorrss">Síguenos en RRSS</h5>
+                <ul id="rrss">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;" class="card">
-        <img src="assets/img/insignia-white.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Experiencia y calidad de servicio garantizada. Contamos con cientos de ventas concretadas
-            y feedback positivo de clientes.</p>
+
+        <div class="finalft" id="finalftshop">
+            <div class="itemfshop">
+                <div>
+                    <h7 class="copy" id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
+                </div>
+
+                <br>
+
+                <div>
+                    <h5 id="fecha">Aquí va la fecha</h5>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;" class="card">
-        <img src="assets/img/exchange-white.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Desenpolva tus artículos con nosotros, generemos economía circular. Compramos tus
-            artículos con transparencia y a precios justos.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Contenedor de cartas -->
-  </main>
 
-  <!--Footer-->
-  <footer>
+    </footer>
 
-    <div class="container">
-      <div class="col mb-3" id="logoft">
-        <img src="assets/img/logo1.png" alt="" width="140 rem" height="120 rem">
-      </div>
+    <!-- FIN FOOTER-->
 
-      <div class="col mb-3" id="column1">
-        <ul class="nav flex-column" id="sitioft">
-          <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Inicio</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tienda</a></li>
-          <li class="nav-item mb-2"><a href="nosotros.html" class="nav-link p-0 text-muted">Quiénes Somos</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
-          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Vende con nosotros</a></li>
-        </ul>
-      </div>
-
-      <div class="col mb-3" class="contacto">
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">O´Higgins 1818 - Valparaíso</li>
-          <li class="nav-item mb-2">32 235 35 35</li>
-          <li class="nav-item mb-2">cachureando@gmail.com</li>
-        </ul>
-      </div>
-
-      <div class="col mb-3" id="rrss">
-        <h5 id="titulorrss">Síguenos en RRSS</h5>
-        <ul id="rrss">
-          <li><a href="#"><i class="fa-brands fa-square-facebook fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
-          <li><a href="#"><i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="finalft" id="finalftshop">
-      <div class="itemfshop">
-      <div>
-          <h7 class="copy" id="copyright">&copy; 2022 Cachureando - Derechos reservados</h7>
-      </div>
-
-      <br>
-
-      <div>
-        <h5 id="fecha">Aquí va la fecha</h5>
-      </div>
-    </div>
-    </div>
-
-  </footer>
-
-  <!-- FIN FOOTER-->
-
-  <script src="js/lib/jquery-3.6.3.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
-  <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/lib/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/5cdadd804a.js" crossorigin="anonymous"></script>
+    <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
